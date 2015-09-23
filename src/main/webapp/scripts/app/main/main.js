@@ -13,10 +13,7 @@ angular.module('bookstoreApp')
                     'content@': {
                         templateUrl: 'scripts/app/main/main.html',
                         controller: 'MainController'
-                    },
-										'@content': {
-												template: '<h1>DEMO</h1>'
-										}
+                    }
                 },
                 resolve: {
                     mainTranslatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate,$translatePartialLoader) {
