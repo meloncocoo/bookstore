@@ -10,14 +10,17 @@ angular.module('bookstoreApp')
                     roles: []
                 },
                 views: {
-										'navbar': {
+										'content@navbar': {
 											templateUrl: 'scripts/components/navbar/navbar.html',
 											controller: 'NavbarController'
+										},
+										'content@': {
+											templateUrl: 'scripts/app/main/main.html',
+											controller: 'MainController'
 										}
                 },
                 resolve: {
-                    mainTranslatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate,$translatePartialLoader) {
-                        $translatePartialLoader.addPart('main');
+                   mainTranslatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate,$translatePartialLoader) {                        $translatePartialLoader.addPart('main');
                         return $translate.refresh();
                     }]
                 }

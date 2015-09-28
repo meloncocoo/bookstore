@@ -57,7 +57,7 @@ angular.module('bookstoreApp', ['LocalStorageModule', 'tmh.dynamicLocale', 'pasc
         $urlRouterProvider.otherwise('/');
         $stateProvider.state('site', {
             'abstract': true,
-						templateUrl: 'scripts/app/main/main.html',
+//						templateUrl: 'scripts/app/main/main.html',
 						resolve: {
                 authorize: ['Auth',
                     function (Auth) {
